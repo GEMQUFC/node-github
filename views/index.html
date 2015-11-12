@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<% 
+		if(locals.user) {
+	%>
+	    <img src="<%=user.avatar_url%>" />
+		Olá, <%= user.login%>
+	<% 
+		}
+	%>
+
+
+	<a href="/github/auth" > Sign up</a>
+
+</body>
+</html>
