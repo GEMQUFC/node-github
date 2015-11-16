@@ -12,7 +12,6 @@ require("./configs/express")(app);
 // Rotas
 require("./routes/route")(app);
 
-
 server.listen(setup.port, setup.hostname, function() {
 	console.log('Server is running. Host: ' + setup.hostname + ' and Port: ' + setup.port + '.');
 });
