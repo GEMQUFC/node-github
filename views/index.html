@@ -9,12 +9,16 @@
 	%>
 	    <img src="<%=user.avatar_url%>" />
 		Olá, <%= user.login%>
-	<% 
-		}
-	%>
 
+		<a href="/logout" > Log Out</a>
+
+	<% 	} else{ %>
 
 	<a href="/github/auth" > Sign up</a>
+	
+	<% } %>
+
+
 
 </body>
 </html>

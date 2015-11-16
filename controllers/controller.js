@@ -74,3 +74,8 @@ exports.getMe = function(req, res){
         res.json(user);
 	});
 };
+
+exports.logout = function(req, res){
+    accessToken  = null;
+    res.redirect("/");
+};
