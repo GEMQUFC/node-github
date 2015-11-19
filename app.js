@@ -8,6 +8,7 @@ var server = http.createServer(app);
 
 // express
 require("./configs/express")(app);
+app.use(express.static(process.cwd() + '/public'));
 
 // Rotas
 require("./routes/route")(app);

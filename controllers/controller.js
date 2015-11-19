@@ -36,7 +36,7 @@ exports.renderIndex = function(req, res){
 exports.githubAuth = function(req, res){
 	res.writeHead(303, {
         Location: oauth.getAuthorizeUrl({ 
-            redirect_uri: 'http://localhost:7878/github-callback',
+            redirect_uri: credentials.urlCallback,
             scope: "user:email,repo,gist,read:org,repo:status"
         })
     });
