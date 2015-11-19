@@ -5,21 +5,52 @@
 		
 	</head>
 	
-	<body>
+	<body class="pushable">
+	
+				<% 
+				if(locals.user) {
+			%>
+			    <img src="<%=user.avatar_url%>" />
+				Olá, <%= user.login%>
 
-		<% 
-			if(locals.user) {
-		%>
-		    <img src="<%=user.avatar_url%>" />
-			Olá, <%= user.login%>
+				<a href="/logout" > Log Out</a>
 
-			<a href="/logout" > Log Out</a>
+			<% 	} else{ %>
 
-		<% 	} else{ %>
+			<div class="ui inverted vertical masthead center aligned segment">
 
-		<a href="/github/auth" > Sign up</a>
-		
-		<% } %>
+			    <div class="ui container">
+			      <div class="ui large secondary inverted pointing menu">
+			        <a class="toc item">
+			          <!--<i class="sidebar icon"></i>-->
+			        </a>
+			        <a class="active item">Home</a>
+			        <a class="item">About</a>
+			        <a class="item">Contact</a>
+			        
+			        <div class="right item">
+			          <a class="ui inverted button" href="/github/auth">Sign Up</a>
+			        </div>
+			      </div>
+			    </div>
+
+			    <div class="ui text container">
+			      <h1 class="ui inverted header">
+			        Krons Inc.
+			      </h1>
+			      <h2>The easiest way to report your bugs</h2>
+			      <div class="ui huge primary button">Get Started</div>
+			    </div>
+
+  			</div>
+
+			<!-- <a href="/github/auth" > Sign up</a> -->
+			
+			<% } %>
+
+			
+		</div>
+
 
 
 
