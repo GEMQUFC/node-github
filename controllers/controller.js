@@ -60,7 +60,7 @@ exports.githubCallback = function(req, res){
             token: accessToken
         });
           
-        res.redirect("/");
+        res.redirect("/home");
     });
 };
 
@@ -75,7 +75,21 @@ exports.getMe = function(req, res){
 	});
 };
 
+exports.getHome = function(req, res) {
+        github.user.get({}, function(err, user) {
+        if (err) 
+            return res.status(400).json({
+                err : err
+            });
+
+          res.render("home", {
+            user : user
+        });
+    });
+}
+
 exports.logout = function(req, res){
     accessToken  = null;
+    console.log(res.session);
     res.redirect("/");
 };
