@@ -1,0 +1,87 @@
+body{
+margin:0;
+padding:0;	
+overflow-x:hidden; 
+}
+#header{
+height:50px;
+width:1360px;
+background-color:rgba(25,25,72,0.9);
+}
+#nav{
+height:35px;
+width:1360px;
+background-color:rgba(176,196,222,0.2);
+}
+#main{
+height:700px;
+width:1360px;
+background-color: rgba(176,196,222,0.2);
+padding:0;
+margin:0;
+}
+	#content{
+	height:700px;
+	width:300px;
+	background-color:rgba(254,254,255,1);
+	float:left;
+	margin:0;
+	padding: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: center;
+	color:navy;
+	}
+		#content div{
+			width:300px;
+			height: 40px;
+			display: table-cell;
+			vertical-align: middle;
+			
+		}
+		li:first-child{
+			margin-top: -15px;
+		}
+
+		li{
+		margin-left: -40px; padding: 0;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		width:300px;
+		height: 40px;
+		background-color: rgba(207,207,207,0.8);
+		text-align: center;
+		line-height: 40px;
+		color:#4F4F4F;
+	}
+	
+	#authentication{
+	height:700px;
+	width:980px;
+	background-color: transparent;
+	float:left;
+	margin-right:0;
+	text-align:center;
+	border:0;
+	border-radius: 0;
+	margin:0;
+	}
+		#authentication div{
+		height:700px;
+		width:980px;
+		margin-left: 40px;
+		background-color:rgba(254,254,255,1);
+		border:1px solid white;
+		border-radius:1px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		}
+#footer{
+height:50px;
+width:1360px;
+}
+.teste{
+	background-color:#8c0000;
+	color:white;
+}

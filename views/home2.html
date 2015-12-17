@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>FERRAMENTA GEMQ - LOGIN</title>
+		<link rel="stylesheet" type="text/css" href="./recursos/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./recursos/css/style_home.css" />
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+		<script type="text/javascript" src="./recursos/js/jquery-2.0.1.min.js"></script>
+		<script type="text/javascript" src="./recursos/js/script.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('li').click(function(){
+					$(this).toggleClass("teste");	
+					$(this).siblings('li').removeClass("teste");
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="header"></div>
+		<div id="nav"></div>
+		<div id="main">
+			<div id="content">
+				<div>Repositórios</div>	
+			<ul id"lista">
+				<li id="rep1">JogoBancoImobiliario</li>
+				<li id="rep2">SiteExemplo</li>
+			</ul>
+			</div>
+			<div id="authentication">
+				<div>Build</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

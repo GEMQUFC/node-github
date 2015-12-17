@@ -1,0 +1,95 @@
+body{
+margin:0;
+padding:0;	
+}
+#header{
+height:50px;
+width:1380px;
+background-color:rgba(25,25,72,0.9);
+}
+#nav{
+height:35px;
+width:1380px;
+background-color:rgba(176,196,222,0.2);
+}
+#main{
+height:500px;
+width:1280px;
+background-color:rgba(254,254,255,1);
+}
+	#content{
+	height:400px;
+	width:730px;
+	background-color:white;
+	float:left;
+	margin-top:50px;
+	}
+		#figure{
+		height:300px;
+		width:730px;
+		background-color:rgba(254,254,255,1);
+		float:left;
+		}
+			img{
+			height:300px;
+			width:400px;
+			margin:10px 0px 0px 160px;
+			}
+		#description{
+		height:100px;
+		width:730px;
+		float:left;
+		text-align:center;
+		}
+			span[id='sigla']{
+			font-size:50px;
+			color:rgba(25,25,72,0.9);
+			}
+			span[id='nome']{
+			font-size:20px;
+			margin:10px;	
+			color:rgba(25,25,72,1);
+			}
+	#authentication{
+	height:300px;
+	width:400px;
+	background-color:rgba(176,196,222,0.2);
+	border:1px solid white;
+	border-radius:15px;
+	float:right;
+	margin-top:100px;
+	margin-right:130px;
+	text-align:center;
+	}
+		span[id='boas_vindas']{
+		font-size:22px;
+		color:rgba(25,25,72,0.9);
+		margin-top:10px;
+		display:inline-block;
+		}
+		span[id='desc_autenticar']{
+		font-size:18px;
+		color:rgba(25,25,72,1);
+		margin-top:80px;
+		display:inline-block;
+		}
+	
+		button{
+		height:50px;
+		width:300px;
+		border:1px solid rgba(25,25,72,0.9);
+		border-radius:5px;
+		background-color:rgba(25,25,72,0.9);
+		font-size:18px;
+		color:rgba(176,196,222,1);
+		text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+		margin-top:10px;
+		}
+		button:hover{
+		background-color:rgba(25,25,62,0.9);
+		}
+#footer{
+height:50px;
+width:1280px;
+background-color:white;
+}
